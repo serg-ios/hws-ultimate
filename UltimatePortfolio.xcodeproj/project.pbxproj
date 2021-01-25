@@ -11,6 +11,10 @@
 		7966C7A025BF333C00891BBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7966C79F25BF333C00891BBB /* ContentView.swift */; };
 		7966C7A225BF333F00891BBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7966C7A125BF333F00891BBB /* Assets.xcassets */; };
 		7966C7A525BF333F00891BBB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7966C7A425BF333F00891BBB /* Preview Assets.xcassets */; };
+		7966C7B025BF38D900891BBB /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7966C7AE25BF38D900891BBB /* Main.xcdatamodeld */; };
+		7966C7B325BF3BC800891BBB /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7966C7B225BF3BC800891BBB /* DataController.swift */; };
+		7966C7B825BF451B00891BBB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7966C7B725BF451B00891BBB /* AudioToolbox.framework */; };
+		7966C7D025BF496200891BBB /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7966C7CF25BF496200891BBB /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,11 @@
 		7966C7A125BF333F00891BBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7966C7A425BF333F00891BBB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7966C7A625BF333F00891BBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7966C7AF25BF38D900891BBB /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
+		7966C7B225BF3BC800891BBB /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		7966C7B525BF451B00891BBB /* UltimatePortfolio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UltimatePortfolio.entitlements; sourceTree = "<group>"; };
+		7966C7B725BF451B00891BBB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		7966C7CF25BF496200891BBB /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7966C7B825BF451B00891BBB /* AudioToolbox.framework in Frameworks */,
+				7966C7D025BF496200891BBB /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +49,7 @@
 			children = (
 				7966C79C25BF333C00891BBB /* UltimatePortfolio */,
 				7966C79B25BF333C00891BBB /* Products */,
+				7966C7B625BF451B00891BBB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,8 +64,11 @@
 		7966C79C25BF333C00891BBB /* UltimatePortfolio */ = {
 			isa = PBXGroup;
 			children = (
+				7966C7B525BF451B00891BBB /* UltimatePortfolio.entitlements */,
 				7966C79D25BF333C00891BBB /* UltimatePortfolioApp.swift */,
 				7966C79F25BF333C00891BBB /* ContentView.swift */,
+				7966C7AE25BF38D900891BBB /* Main.xcdatamodeld */,
+				7966C7B225BF3BC800891BBB /* DataController.swift */,
 				7966C7A125BF333F00891BBB /* Assets.xcassets */,
 				7966C7A625BF333F00891BBB /* Info.plist */,
 				7966C7A325BF333F00891BBB /* Preview Content */,
@@ -67,6 +82,15 @@
 				7966C7A425BF333F00891BBB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7966C7B625BF451B00891BBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7966C7CF25BF496200891BBB /* CloudKit.framework */,
+				7966C7B725BF451B00891BBB /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +162,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7966C7B025BF38D900891BBB /* Main.xcdatamodeld in Sources */,
+				7966C7B325BF3BC800891BBB /* DataController.swift in Sources */,
 				7966C7A025BF333C00891BBB /* ContentView.swift in Sources */,
 				7966C79E25BF333C00891BBB /* UltimatePortfolioApp.swift in Sources */,
 			);
@@ -267,6 +293,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = UltimatePortfolio/UltimatePortfolio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"UltimatePortfolio/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
@@ -289,6 +316,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = UltimatePortfolio/UltimatePortfolio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"UltimatePortfolio/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
@@ -328,6 +356,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7966C7AE25BF38D900891BBB /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7966C7AF25BF38D900891BBB /* Main.xcdatamodel */,
+			);
+			currentVersion = 7966C7AF25BF38D900891BBB /* Main.xcdatamodel */;
+			path = Main.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7966C79225BF333C00891BBB /* Project object */;
 }
