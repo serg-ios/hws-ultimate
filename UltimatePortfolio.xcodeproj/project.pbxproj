@@ -21,6 +21,7 @@
 		7966C7B325BF3BC800891BBB /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7966C7B225BF3BC800891BBB /* DataController.swift */; };
 		7966C7B825BF451B00891BBB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7966C7B725BF451B00891BBB /* AudioToolbox.framework */; };
 		7966C7D025BF496200891BBB /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7966C7CF25BF496200891BBB /* CloudKit.framework */; };
+		79A8EF4725C6C92F0099B1DE /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8EF4625C6C92F0099B1DE /* Binding-OnChange.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		7966C7B525BF451B00891BBB /* UltimatePortfolio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UltimatePortfolio.entitlements; sourceTree = "<group>"; };
 		7966C7B725BF451B00891BBB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		7966C7CF25BF496200891BBB /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		79A8EF4625C6C92F0099B1DE /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 		7966C79C25BF333C00891BBB /* UltimatePortfolio */ = {
 			isa = PBXGroup;
 			children = (
+				79A8EF4625C6C92F0099B1DE /* Binding-OnChange.swift */,
 				793DA7E525C0CD2E001DE207 /* EditItemView.swift */,
 				790A66A825BF500F0082F571 /* HomeView.swift */,
 				790A66AD25BF509E0082F571 /* ProjectsView.swift */,
@@ -186,6 +189,7 @@
 				7966C7B325BF3BC800891BBB /* DataController.swift in Sources */,
 				7906D15025C209C2001F78B1 /* ItemRowView.swift in Sources */,
 				7966C7A025BF333C00891BBB /* ContentView.swift in Sources */,
+				79A8EF4725C6C92F0099B1DE /* Binding-OnChange.swift in Sources */,
 				790A66A925BF500F0082F571 /* HomeView.swift in Sources */,
 				7966C79E25BF333C00891BBB /* UltimatePortfolioApp.swift in Sources */,
 				790A672825C0B3D10082F571 /* Item-CoreDataHelpers.swift in Sources */,
