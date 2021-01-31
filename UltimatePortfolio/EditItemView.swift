@@ -29,8 +29,8 @@ struct EditItemView: View {
     var body: some View {
         Form {
             Section(header: Text("Basic settings")) {
-                TextField("Item name", text: $title)
-                TextField("Description", text: $detail)
+                TextField("Item name", text: $title.onChange(update))
+                TextField("Description", text: $detail.onChange(update))
             }
             Section(header: Text("Priority")) {
                 Picker("Priority", selection: $priority) {
@@ -45,7 +45,7 @@ struct EditItemView: View {
             }
         }
         .navigationTitle("Edit item")
-        .onDisappear(perform: update)
+        .onDisappear(perform: dataController.save)
     }
 
     func update() {
