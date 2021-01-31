@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7906D15025C209C2001F78B1 /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7906D14F25C209C2001F78B1 /* ItemRowView.swift */; };
 		790A66A925BF500F0082F571 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790A66A825BF500F0082F571 /* HomeView.swift */; };
 		790A66AE25BF509E0082F571 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790A66AD25BF509E0082F571 /* ProjectsView.swift */; };
 		790A672825C0B3D10082F571 /* Item-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790A672725C0B3D10082F571 /* Item-CoreDataHelpers.swift */; };
 		790A672B25C0B4F10082F571 /* Project-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790A672A25C0B4F10082F571 /* Project-CoreDataHelpers.swift */; };
+		793DA7E625C0CD2E001DE207 /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793DA7E525C0CD2E001DE207 /* EditItemView.swift */; };
 		7966C79E25BF333C00891BBB /* UltimatePortfolioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7966C79D25BF333C00891BBB /* UltimatePortfolioApp.swift */; };
 		7966C7A025BF333C00891BBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7966C79F25BF333C00891BBB /* ContentView.swift */; };
 		7966C7A225BF333F00891BBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7966C7A125BF333F00891BBB /* Assets.xcassets */; };
@@ -22,10 +24,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7906D14F25C209C2001F78B1 /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
 		790A66A825BF500F0082F571 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		790A66AD25BF509E0082F571 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 		790A672725C0B3D10082F571 /* Item-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		790A672A25C0B4F10082F571 /* Project-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-CoreDataHelpers.swift"; sourceTree = "<group>"; };
+		793DA7E525C0CD2E001DE207 /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
 		7966C79A25BF333C00891BBB /* UltimatePortfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UltimatePortfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7966C79D25BF333C00891BBB /* UltimatePortfolioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltimatePortfolioApp.swift; sourceTree = "<group>"; };
 		7966C79F25BF333C00891BBB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,8 +76,10 @@
 		7966C79C25BF333C00891BBB /* UltimatePortfolio */ = {
 			isa = PBXGroup;
 			children = (
+				793DA7E525C0CD2E001DE207 /* EditItemView.swift */,
 				790A66A825BF500F0082F571 /* HomeView.swift */,
 				790A66AD25BF509E0082F571 /* ProjectsView.swift */,
+				7906D14F25C209C2001F78B1 /* ItemRowView.swift */,
 				790A672725C0B3D10082F571 /* Item-CoreDataHelpers.swift */,
 				790A672A25C0B4F10082F571 /* Project-CoreDataHelpers.swift */,
 				7966C7B525BF451B00891BBB /* UltimatePortfolio.entitlements */,
@@ -178,10 +184,12 @@
 				7966C7B025BF38D900891BBB /* Main.xcdatamodeld in Sources */,
 				790A672B25C0B4F10082F571 /* Project-CoreDataHelpers.swift in Sources */,
 				7966C7B325BF3BC800891BBB /* DataController.swift in Sources */,
+				7906D15025C209C2001F78B1 /* ItemRowView.swift in Sources */,
 				7966C7A025BF333C00891BBB /* ContentView.swift in Sources */,
 				790A66A925BF500F0082F571 /* HomeView.swift in Sources */,
 				7966C79E25BF333C00891BBB /* UltimatePortfolioApp.swift in Sources */,
 				790A672825C0B3D10082F571 /* Item-CoreDataHelpers.swift in Sources */,
+				793DA7E625C0CD2E001DE207 /* EditItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
