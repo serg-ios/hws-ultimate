@@ -21,7 +21,10 @@
 		7966C7B325BF3BC800891BBB /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7966C7B225BF3BC800891BBB /* DataController.swift */; };
 		7966C7B825BF451B00891BBB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7966C7B725BF451B00891BBB /* AudioToolbox.framework */; };
 		7966C7D025BF496200891BBB /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7966C7CF25BF496200891BBB /* CloudKit.framework */; };
+		79A73F4625C9DF6F0060C124 /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A73F4525C9DF6F0060C124 /* EditProjectView.swift */; };
 		79A8EF4725C6C92F0099B1DE /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8EF4625C6C92F0099B1DE /* Binding-OnChange.swift */; };
+		79A8EF4B25C6CE3E0099B1DE /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8EF4A25C6CE3E0099B1DE /* ProjectHeaderView.swift */; };
+		79A8EF4E25C6D26D0099B1DE /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79A8EF4D25C6D26D0099B1DE /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,7 +45,10 @@
 		7966C7B525BF451B00891BBB /* UltimatePortfolio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UltimatePortfolio.entitlements; sourceTree = "<group>"; };
 		7966C7B725BF451B00891BBB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		7966C7CF25BF496200891BBB /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		79A73F4525C9DF6F0060C124 /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
 		79A8EF4625C6C92F0099B1DE /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
+		79A8EF4A25C6CE3E0099B1DE /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
+		79A8EF4D25C6D26D0099B1DE /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,7 @@
 		7966C79125BF333C00891BBB = {
 			isa = PBXGroup;
 			children = (
+				79A73F4525C9DF6F0060C124 /* EditProjectView.swift */,
 				7966C79C25BF333C00891BBB /* UltimatePortfolio */,
 				7966C79B25BF333C00891BBB /* Products */,
 				7966C7B625BF451B00891BBB /* Frameworks */,
@@ -80,6 +87,7 @@
 			children = (
 				79A8EF4625C6C92F0099B1DE /* Binding-OnChange.swift */,
 				793DA7E525C0CD2E001DE207 /* EditItemView.swift */,
+				79A8EF4A25C6CE3E0099B1DE /* ProjectHeaderView.swift */,
 				790A66A825BF500F0082F571 /* HomeView.swift */,
 				790A66AD25BF509E0082F571 /* ProjectsView.swift */,
 				7906D14F25C209C2001F78B1 /* ItemRowView.swift */,
@@ -91,6 +99,7 @@
 				7966C7AE25BF38D900891BBB /* Main.xcdatamodeld */,
 				7966C7B225BF3BC800891BBB /* DataController.swift */,
 				7966C7A125BF333F00891BBB /* Assets.xcassets */,
+				79A8EF4D25C6D26D0099B1DE /* Colors.xcassets */,
 				7966C7A625BF333F00891BBB /* Info.plist */,
 				7966C7A325BF333F00891BBB /* Preview Content */,
 			);
@@ -171,6 +180,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79A8EF4E25C6D26D0099B1DE /* Colors.xcassets in Resources */,
 				7966C7A525BF333F00891BBB /* Preview Assets.xcassets in Resources */,
 				7966C7A225BF333F00891BBB /* Assets.xcassets in Resources */,
 			);
@@ -184,8 +194,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				790A66AE25BF509E0082F571 /* ProjectsView.swift in Sources */,
+				79A8EF4B25C6CE3E0099B1DE /* ProjectHeaderView.swift in Sources */,
 				7966C7B025BF38D900891BBB /* Main.xcdatamodeld in Sources */,
 				790A672B25C0B4F10082F571 /* Project-CoreDataHelpers.swift in Sources */,
+				79A73F4625C9DF6F0060C124 /* EditProjectView.swift in Sources */,
 				7966C7B325BF3BC800891BBB /* DataController.swift in Sources */,
 				7906D15025C209C2001F78B1 /* ItemRowView.swift in Sources */,
 				7966C7A025BF333C00891BBB /* ContentView.swift in Sources */,

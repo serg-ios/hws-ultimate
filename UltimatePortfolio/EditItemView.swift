@@ -41,7 +41,7 @@ struct EditItemView: View {
                 .pickerStyle(SegmentedPickerStyle())
             }
             Section {
-                Toggle("Mark completed", isOn: $completed)
+                Toggle("Mark completed", isOn: $completed.onChange(update))
             }
         }
         .navigationTitle("Edit item")
@@ -49,6 +49,9 @@ struct EditItemView: View {
     }
 
     func update() {
+        item.project?.objectWillChange.send()
+
+
         item.title = title
         item.detail = detail
         item.priority = Int16(priority)
