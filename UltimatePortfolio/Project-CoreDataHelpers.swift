@@ -24,8 +24,11 @@ extension Project {
     }
 
     var projectItems: [Item] {
-        let itemsArray = items?.allObjects as? [Item] ?? []
-        return itemsArray.sorted(by: {
+        items?.allObjects as? [Item] ?? []
+    }
+
+    var projectItemsDefaultSorted: [Item] {
+        projectItems.sorted(by: {
             (!$0.completed && $1.completed) || ($0.priority > $1.priority) || ($0.itemCreationDate < $1.itemCreationDate)
         })
     }
@@ -46,5 +49,18 @@ extension Project {
         project.closed = true
         project.creationDate = Date()
         return project
+    }
+
+
+
+    func projectItems(using sortOrder: Item.SortOrder) -> [Item] {
+        switch sortOrder {
+        case .optimize:
+            return projectItemsDefaultSorted
+        case .creationDate:
+            return projectItems.sorted(by: \Item.itemCreationDate)
+        case .title:
+            return projectItems.sorted(by: \Item.itemTitle)
+        }
     }
 }
