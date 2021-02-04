@@ -33,7 +33,7 @@ struct EditItemView: View {
                 TextField("Description", text: $detail.onChange(update))
             }
             Section(header: Text("Priority")) {
-                Picker("Priority", selection: $priority) {
+                Picker("Priority", selection: $priority.onChange(update)) {
                     Text("Low").tag(1)
                     Text("Medium").tag(2)
                     Text("Hight").tag(3)

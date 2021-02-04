@@ -25,6 +25,7 @@
 		79A8EF4725C6C92F0099B1DE /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8EF4625C6C92F0099B1DE /* Binding-OnChange.swift */; };
 		79A8EF4B25C6CE3E0099B1DE /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8EF4A25C6CE3E0099B1DE /* ProjectHeaderView.swift */; };
 		79A8EF4E25C6D26D0099B1DE /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79A8EF4D25C6D26D0099B1DE /* Colors.xcassets */; };
+		79ADB7B125CC67F900F92EDC /* SelectSomethingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ADB7B025CC67F900F92EDC /* SelectSomethingView.swift */; };
 		79EB7A5525CB1E9900A535E8 /* Sequence-Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EB7A5425CB1E9900A535E8 /* Sequence-Sorting.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		79A8EF4625C6C92F0099B1DE /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
 		79A8EF4A25C6CE3E0099B1DE /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
 		79A8EF4D25C6D26D0099B1DE /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		79ADB7B025CC67F900F92EDC /* SelectSomethingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSomethingView.swift; sourceTree = "<group>"; };
 		79EB7A5425CB1E9900A535E8 /* Sequence-Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence-Sorting.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +71,7 @@
 		7966C79125BF333C00891BBB = {
 			isa = PBXGroup;
 			children = (
+				79ADB7B025CC67F900F92EDC /* SelectSomethingView.swift */,
 				79A73F4525C9DF6F0060C124 /* EditProjectView.swift */,
 				7966C79C25BF333C00891BBB /* UltimatePortfolio */,
 				7966C79B25BF333C00891BBB /* Products */,
@@ -202,6 +205,7 @@
 				790A672B25C0B4F10082F571 /* Project-CoreDataHelpers.swift in Sources */,
 				79A73F4625C9DF6F0060C124 /* EditProjectView.swift in Sources */,
 				7966C7B325BF3BC800891BBB /* DataController.swift in Sources */,
+				79ADB7B125CC67F900F92EDC /* SelectSomethingView.swift in Sources */,
 				7906D15025C209C2001F78B1 /* ItemRowView.swift in Sources */,
 				7966C7A025BF333C00891BBB /* ContentView.swift in Sources */,
 				79A8EF4725C6C92F0099B1DE /* Binding-OnChange.swift in Sources */,
