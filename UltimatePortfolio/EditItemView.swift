@@ -36,15 +36,15 @@ struct EditItemView: View {
                 Picker("Priority", selection: $priority.onChange(update)) {
                     Text("Low").tag(1)
                     Text("Medium").tag(2)
-                    Text("Hight").tag(3)
+                    Text("High").tag(3)
                 }
                 .pickerStyle(SegmentedPickerStyle())
             }
             Section {
-                Toggle("Mark completed", isOn: $completed.onChange(update))
+                Toggle("Mark Completed", isOn: $completed.onChange(update))
             }
         }
-        .navigationTitle("Edit item")
+        .navigationTitle("Edit Item")
         .onDisappear(perform: dataController.save)
     }
 
