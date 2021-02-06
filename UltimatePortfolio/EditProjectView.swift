@@ -57,7 +57,7 @@ struct EditProjectView: View {
                 }
                 .padding(.vertical)
             }
-            Section(footer: Text("Closing a project moves it from the Open to the Close tab; deleting it removes the project entirely")) {
+            Section(footer: Text("Closing a project moves it from the Open to Closed tab; deleting it removes the project completely.")) {
                 Button(project.closed ? "Reopen this project" : "Close this project") {
                     project.closed.toggle()
                     update()
