@@ -30,6 +30,7 @@
 		79ADB7B825CC75E600F92EDC /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = 79ADB7B725CC75E600F92EDC /* Awards.json */; };
 		79ADB7BB25CC769400F92EDC /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ADB7BA25CC769400F92EDC /* Award.swift */; };
 		79ADB7BE25CC775900F92EDC /* AwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ADB7BD25CC775900F92EDC /* AwardsView.swift */; };
+		79C941B425CE021500E8BFCA /* Color-Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C941B325CE021500E8BFCA /* Color-Additions.swift */; };
 		79EB7A5525CB1E9900A535E8 /* Sequence-Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EB7A5425CB1E9900A535E8 /* Sequence-Sorting.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		79ADB7B725CC75E600F92EDC /* Awards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Awards.json; sourceTree = "<group>"; };
 		79ADB7BA25CC769400F92EDC /* Award.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Award.swift; sourceTree = "<group>"; };
 		79ADB7BD25CC775900F92EDC /* AwardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsView.swift; sourceTree = "<group>"; };
+		79C941B325CE021500E8BFCA /* Color-Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Additions.swift"; sourceTree = "<group>"; };
 		79EB7A5425CB1E9900A535E8 /* Sequence-Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence-Sorting.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +81,7 @@
 		7966C79125BF333C00891BBB = {
 			isa = PBXGroup;
 			children = (
+				79C941B325CE021500E8BFCA /* Color-Additions.swift */,
 				7966C79C25BF333C00891BBB /* UltimatePortfolio */,
 				7966C79B25BF333C00891BBB /* Products */,
 				7966C7B625BF451B00891BBB /* Frameworks */,
@@ -217,6 +220,7 @@
 				79ADB7BE25CC775900F92EDC /* AwardsView.swift in Sources */,
 				7966C7B025BF38D900891BBB /* Main.xcdatamodeld in Sources */,
 				790A672B25C0B4F10082F571 /* Project-CoreDataHelpers.swift in Sources */,
+				79C941B425CE021500E8BFCA /* Color-Additions.swift in Sources */,
 				79A73F4625C9DF6F0060C124 /* EditProjectView.swift in Sources */,
 				7966C7B325BF3BC800891BBB /* DataController.swift in Sources */,
 				79ADB7B125CC67F900F92EDC /* SelectSomethingView.swift in Sources */,
