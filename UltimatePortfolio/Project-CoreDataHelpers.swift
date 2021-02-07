@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 extension Project {
 
@@ -31,6 +32,10 @@ extension Project {
         projectItems.sorted(by: {
             (!$0.completed && $1.completed) || ($0.priority > $1.priority) || ($0.itemCreationDate < $1.itemCreationDate)
         })
+    }
+
+    var label: LocalizedStringKey {
+        LocalizedStringKey("\(projectTitle), \(projectItems.count) items, \(completionAmount * 100, specifier: "%g")% complete.")
     }
 
     var completionAmount: Double {
