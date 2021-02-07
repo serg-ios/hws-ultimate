@@ -8,7 +8,10 @@
 import Foundation
 
 extension Sequence {
-    func sorted<Value>(by keyPath: KeyPath<Element, Value>, using areInIncreasingOrder: (Value, Value) throws -> Bool) rethrows -> [Element] {
+    func sorted<Value>(
+        by keyPath: KeyPath<Element, Value>,
+        using areInIncreasingOrder: (Value, Value) throws -> Bool
+    ) rethrows -> [Element] {
         try sorted {
             try areInIncreasingOrder($0[keyPath: keyPath], $1[keyPath: keyPath])
         }
@@ -18,7 +21,10 @@ extension Sequence {
         sorted(by: keyPath, using: <)
     }
 
-    func sorted<Value>(by keyPath: PartialKeyPath<Element>, using areInIncreasingOrder: (Value, Value) throws -> Bool) rethrows -> [Element] {
+    func sorted<Value>(
+        by keyPath: PartialKeyPath<Element>,
+        using areInIncreasingOrder: (Value, Value) throws -> Bool
+    ) rethrows -> [Element] {
         try self.sorted {
             guard let value1 = $0[keyPath: keyPath] as? Value, let value2 = $1[keyPath: keyPath] as? Value else {
                 return false
@@ -27,7 +33,7 @@ extension Sequence {
         }
     }
 
-    func sorted<Value: Comparable>(by keyPath: PartialKeyPath<Element>, as: Value.Type? = nil) -> [Element] {
+    func sorted<Value: Comparable>(by keyPath: PartialKeyPath<Element>, as type: Value.Type? = nil) -> [Element] {
         let function: (Value, Value) -> Bool = (<)
         return sorted(by: keyPath, using: function)
     }

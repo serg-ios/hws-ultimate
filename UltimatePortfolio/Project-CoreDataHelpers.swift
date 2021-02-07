@@ -10,7 +10,20 @@ import SwiftUI
 
 extension Project {
 
-    static let colors = ["Pink", "Purple", "Red", "Orange", "Gold", "Green", "Teal", "Light Blue", "Dark Blue", "Midnight", "Dark Gray", "Gray"]
+    static let colors = [
+        "Pink",
+        "Purple",
+        "Red",
+        "Orange",
+        "Gold",
+        "Green",
+        "Teal",
+        "Light Blue",
+        "Dark Blue",
+        "Midnight",
+        "Dark Gray",
+        "Gray"
+    ]
 
     var projectTitle: String {
         title ?? NSLocalizedString("New Project", comment: "Create a new project.")
@@ -30,12 +43,16 @@ extension Project {
 
     var projectItemsDefaultSorted: [Item] {
         projectItems.sorted(by: {
-            (!$0.completed && $1.completed) || ($0.priority > $1.priority) || ($0.itemCreationDate < $1.itemCreationDate)
+            (!$0.completed && $1.completed)
+                || ($0.priority > $1.priority)
+                || ($0.itemCreationDate < $1.itemCreationDate)
         })
     }
 
     var label: LocalizedStringKey {
-        LocalizedStringKey("\(projectTitle), \(projectItems.count) items, \(completionAmount * 100, specifier: "%g")% complete.")
+        LocalizedStringKey(
+            "\(projectTitle), \(projectItems.count) items, \(completionAmount * 100, specifier: "%g")% complete."
+        )
     }
 
     var completionAmount: Double {
@@ -55,8 +72,6 @@ extension Project {
         project.creationDate = Date()
         return project
     }
-
-
 
     func projectItems(using sortOrder: Item.SortOrder) -> [Item] {
         switch sortOrder {
