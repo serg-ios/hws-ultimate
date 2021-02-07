@@ -24,6 +24,8 @@
 		7966C7B325BF3BC800891BBB /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7966C7B225BF3BC800891BBB /* DataController.swift */; };
 		7966C7B825BF451B00891BBB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7966C7B725BF451B00891BBB /* AudioToolbox.framework */; };
 		7966C7D025BF496200891BBB /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7966C7CF25BF496200891BBB /* CloudKit.framework */; };
+		7997C90225D00F2B00CAEAEC /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7997C90125D00F2B00CAEAEC /* ItemListView.swift */; };
+		7997C90525D011B600CAEAEC /* ProjectSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7997C90425D011B600CAEAEC /* ProjectSummaryView.swift */; };
 		79A73F4625C9DF6F0060C124 /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A73F4525C9DF6F0060C124 /* EditProjectView.swift */; };
 		79A8EF4725C6C92F0099B1DE /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8EF4625C6C92F0099B1DE /* Binding-OnChange.swift */; };
 		79A8EF4B25C6CE3E0099B1DE /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8EF4A25C6CE3E0099B1DE /* ProjectHeaderView.swift */; };
@@ -60,6 +62,8 @@
 		7966C7B525BF451B00891BBB /* UltimatePortfolio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UltimatePortfolio.entitlements; sourceTree = "<group>"; };
 		7966C7B725BF451B00891BBB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		7966C7CF25BF496200891BBB /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		7997C90125D00F2B00CAEAEC /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
+		7997C90425D011B600CAEAEC /* ProjectSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSummaryView.swift; sourceTree = "<group>"; };
 		79A73F4525C9DF6F0060C124 /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
 		79A8EF4625C6C92F0099B1DE /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
 		79A8EF4A25C6CE3E0099B1DE /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
@@ -109,6 +113,7 @@
 				79C941B325CE021500E8BFCA /* Color-Additions.swift */,
 				795CA10D25CF28440087BCA7 /* Awards.json */,
 				79ADB7BA25CC769400F92EDC /* Award.swift */,
+				7997C90125D00F2B00CAEAEC /* ItemListView.swift */,
 				79ADB7BD25CC775900F92EDC /* AwardsView.swift */,
 				79ADB7B325CC6B5A00F92EDC /* Bundle-Decodable.swift */,
 				79ADB7B025CC67F900F92EDC /* SelectSomethingView.swift */,
@@ -117,6 +122,7 @@
 				793DA7E525C0CD2E001DE207 /* EditItemView.swift */,
 				79A8EF4A25C6CE3E0099B1DE /* ProjectHeaderView.swift */,
 				790A66A825BF500F0082F571 /* HomeView.swift */,
+				7997C90425D011B600CAEAEC /* ProjectSummaryView.swift */,
 				795CA10225CF25400087BCA7 /* Localizable.strings */,
 				790A66AD25BF509E0082F571 /* ProjectsView.swift */,
 				7906D14F25C209C2001F78B1 /* ItemRowView.swift */,
@@ -228,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				790A66AE25BF509E0082F571 /* ProjectsView.swift in Sources */,
+				7997C90525D011B600CAEAEC /* ProjectSummaryView.swift in Sources */,
 				79A8EF4B25C6CE3E0099B1DE /* ProjectHeaderView.swift in Sources */,
 				79ADB7BE25CC775900F92EDC /* AwardsView.swift in Sources */,
 				7966C7B025BF38D900891BBB /* Main.xcdatamodeld in Sources */,
@@ -242,6 +249,7 @@
 				79A8EF4725C6C92F0099B1DE /* Binding-OnChange.swift in Sources */,
 				79EB7A5525CB1E9900A535E8 /* Sequence-Sorting.swift in Sources */,
 				79ADB7B425CC6B5A00F92EDC /* Bundle-Decodable.swift in Sources */,
+				7997C90225D00F2B00CAEAEC /* ItemListView.swift in Sources */,
 				790A66A925BF500F0082F571 /* HomeView.swift in Sources */,
 				7966C79E25BF333C00891BBB /* UltimatePortfolioApp.swift in Sources */,
 				790A672825C0B3D10082F571 /* Item-CoreDataHelpers.swift in Sources */,
