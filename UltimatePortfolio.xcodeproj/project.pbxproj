@@ -89,6 +89,89 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7908DAF125D7066200F4058B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7966C7B225BF3BC800891BBB /* DataController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7908DAF225D7089200F4058B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				790A672725C0B3D10082F571 /* Item-CoreDataHelpers.swift */,
+				790A672A25C0B4F10082F571 /* Project-CoreDataHelpers.swift */,
+				79ADB7B325CC6B5A00F92EDC /* Bundle-Decodable.swift */,
+				79EB7A5425CB1E9900A535E8 /* Sequence-Sorting.swift */,
+				79A8EF4625C6C92F0099B1DE /* Binding-OnChange.swift */,
+				79C941B325CE021500E8BFCA /* Color-Additions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7908DAF325D708A000F4058B /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				795CA10825CF26150087BCA7 /* Localizable.stringsdict */,
+				795CA10225CF25400087BCA7 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		7908DAF425D708AA00F4058B /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				7966C7A625BF333F00891BBB /* Info.plist */,
+				7966C7B525BF451B00891BBB /* UltimatePortfolio.entitlements */,
+				7966C7AE25BF38D900891BBB /* Main.xcdatamodeld */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		7908DAF825D70A8400F4058B /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				7908DAF925D70A8D00F4058B /* Home */,
+				7908DAFB25D70A9900F4058B /* Awards */,
+				7908DAFA25D70A9100F4058B /* Projects */,
+			);
+			path = Activities;
+			sourceTree = "<group>";
+		};
+		7908DAF925D70A8D00F4058B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				790A66A825BF500F0082F571 /* HomeView.swift */,
+				7997C90125D00F2B00CAEAEC /* ItemListView.swift */,
+				7997C90425D011B600CAEAEC /* ProjectSummaryView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7908DAFA25D70A9100F4058B /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				790A66AD25BF509E0082F571 /* ProjectsView.swift */,
+				79ADB7B025CC67F900F92EDC /* SelectSomethingView.swift */,
+				79A8EF4A25C6CE3E0099B1DE /* ProjectHeaderView.swift */,
+				7906D14F25C209C2001F78B1 /* ItemRowView.swift */,
+				79A73F4525C9DF6F0060C124 /* EditProjectView.swift */,
+				793DA7E525C0CD2E001DE207 /* EditItemView.swift */,
+			);
+			path = Projects;
+			sourceTree = "<group>";
+		};
+		7908DAFB25D70A9900F4058B /* Awards */ = {
+			isa = PBXGroup;
+			children = (
+				79ADB7BD25CC775900F92EDC /* AwardsView.swift */,
+				79ADB7BA25CC769400F92EDC /* Award.swift */,
+				795CA10D25CF28440087BCA7 /* Awards.json */,
+			);
+			path = Awards;
+			sourceTree = "<group>";
+		};
 		7966C79125BF333C00891BBB = {
 			isa = PBXGroup;
 			children = (
@@ -109,34 +192,15 @@
 		7966C79C25BF333C00891BBB /* UltimatePortfolio */ = {
 			isa = PBXGroup;
 			children = (
-				7966C7B525BF451B00891BBB /* UltimatePortfolio.entitlements */,
-				7966C7A625BF333F00891BBB /* Info.plist */,
-				79ADB7BA25CC769400F92EDC /* Award.swift */,
-				79ADB7BD25CC775900F92EDC /* AwardsView.swift */,
-				79A8EF4625C6C92F0099B1DE /* Binding-OnChange.swift */,
-				79ADB7B325CC6B5A00F92EDC /* Bundle-Decodable.swift */,
-				79C941B325CE021500E8BFCA /* Color-Additions.swift */,
-				7966C79F25BF333C00891BBB /* ContentView.swift */,
-				7966C7B225BF3BC800891BBB /* DataController.swift */,
-				793DA7E525C0CD2E001DE207 /* EditItemView.swift */,
-				79A73F4525C9DF6F0060C124 /* EditProjectView.swift */,
-				790A66A825BF500F0082F571 /* HomeView.swift */,
-				790A672725C0B3D10082F571 /* Item-CoreDataHelpers.swift */,
-				7997C90125D00F2B00CAEAEC /* ItemListView.swift */,
-				7906D14F25C209C2001F78B1 /* ItemRowView.swift */,
-				790A672A25C0B4F10082F571 /* Project-CoreDataHelpers.swift */,
-				79A8EF4A25C6CE3E0099B1DE /* ProjectHeaderView.swift */,
-				7997C90425D011B600CAEAEC /* ProjectSummaryView.swift */,
-				790A66AD25BF509E0082F571 /* ProjectsView.swift */,
-				79ADB7B025CC67F900F92EDC /* SelectSomethingView.swift */,
-				79EB7A5425CB1E9900A535E8 /* Sequence-Sorting.swift */,
+				7908DAF825D70A8400F4058B /* Activities */,
+				7908DAF425D708AA00F4058B /* Configuration */,
+				7908DAF325D708A000F4058B /* Localization */,
+				7908DAF225D7089200F4058B /* Extensions */,
+				7908DAF125D7066200F4058B /* Controllers */,
 				7966C79D25BF333C00891BBB /* UltimatePortfolioApp.swift */,
+				7966C79F25BF333C00891BBB /* ContentView.swift */,
 				7966C7A125BF333F00891BBB /* Assets.xcassets */,
 				79A8EF4D25C6D26D0099B1DE /* Colors.xcassets */,
-				795CA10D25CF28440087BCA7 /* Awards.json */,
-				795CA10225CF25400087BCA7 /* Localizable.strings */,
-				795CA10825CF26150087BCA7 /* Localizable.stringsdict */,
-				7966C7AE25BF38D900891BBB /* Main.xcdatamodeld */,
 				7966C7A325BF333F00891BBB /* Preview Content */,
 			);
 			path = UltimatePortfolio;
@@ -433,12 +497,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = UltimatePortfolio/UltimatePortfolio.entitlements;
+				CODE_SIGN_ENTITLEMENTS = UltimatePortfolio/Configuration/UltimatePortfolio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"UltimatePortfolio/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = UltimatePortfolio/Info.plist;
+				INFOPLIST_FILE = UltimatePortfolio/Configuration/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -456,12 +520,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = UltimatePortfolio/UltimatePortfolio.entitlements;
+				CODE_SIGN_ENTITLEMENTS = UltimatePortfolio/Configuration/UltimatePortfolio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"UltimatePortfolio/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = UltimatePortfolio/Info.plist;
+				INFOPLIST_FILE = UltimatePortfolio/Configuration/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
