@@ -14,6 +14,9 @@ class DataController: ObservableObject {
     init(inMemory: Bool = false) {
         container = NSPersistentCloudKitContainer(name: "Main")
 
+        // For testing and previewing purposes, we create a temporary
+        // in-memory database by writing to /dev/null so our data
+        // is destroyed after the app finishes running.
         if inMemory {
             container.persistentStoreDescriptions.first?.url = URL(fileURLWithPath: "/dev/null")
         }
