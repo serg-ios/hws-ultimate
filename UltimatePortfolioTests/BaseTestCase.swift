@@ -12,11 +12,11 @@ import XCTest
 
 class BaseTestCase: XCTestCase {
 
-    var dataControler: DataController!
+    var dataController: DataController!
     var managedObjectContext: NSManagedObjectContext!
 
     override func setUpWithError() throws {
-        dataControler = DataController(inMemory: true)
-        managedObjectContext = dataControler.container.viewContext
+        dataController = DataController(inMemory: true)
+        managedObjectContext = dataController.container.viewContext
     }
 }
