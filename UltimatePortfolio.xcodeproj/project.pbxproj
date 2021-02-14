@@ -28,6 +28,7 @@
 		7966C7B325BF3BC800891BBB /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7966C7B225BF3BC800891BBB /* DataController.swift */; };
 		7966C7B825BF451B00891BBB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7966C7B725BF451B00891BBB /* AudioToolbox.framework */; };
 		7966C7D025BF496200891BBB /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7966C7CF25BF496200891BBB /* CloudKit.framework */; };
+		7968F1A425D8993300EF2CB2 /* DevelopmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7968F1A325D8993300EF2CB2 /* DevelopmentTests.swift */; };
 		7997C90225D00F2B00CAEAEC /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7997C90125D00F2B00CAEAEC /* ItemListView.swift */; };
 		7997C90525D011B600CAEAEC /* ProjectSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7997C90425D011B600CAEAEC /* ProjectSummaryView.swift */; };
 		79A73F4625C9DF6F0060C124 /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A73F4525C9DF6F0060C124 /* EditProjectView.swift */; };
@@ -82,6 +83,7 @@
 		7966C7B525BF451B00891BBB /* UltimatePortfolio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UltimatePortfolio.entitlements; sourceTree = "<group>"; };
 		7966C7B725BF451B00891BBB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		7966C7CF25BF496200891BBB /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		7968F1A325D8993300EF2CB2 /* DevelopmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DevelopmentTests.swift; path = UltimatePortfolioTests/DevelopmentTests.swift; sourceTree = "<group>"; };
 		7997C90125D00F2B00CAEAEC /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
 		7997C90425D011B600CAEAEC /* ProjectSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSummaryView.swift; sourceTree = "<group>"; };
 		79A73F4525C9DF6F0060C124 /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 		7966C79125BF333C00891BBB = {
 			isa = PBXGroup;
 			children = (
+				7968F1A325D8993300EF2CB2 /* DevelopmentTests.swift */,
 				7966C79C25BF333C00891BBB /* UltimatePortfolio */,
 				7908DB0425D73E8300F4058B /* UltimatePortfolioTests */,
 				7966C79B25BF333C00891BBB /* Products */,
@@ -394,6 +397,7 @@
 				7908DB1E25D74CE400F4058B /* AwardTests.swift in Sources */,
 				7908DB0625D73E8300F4058B /* BaseTestCase.swift in Sources */,
 				7908DB1825D7442C00F4058B /* ProjectTests.swift in Sources */,
+				7968F1A425D8993300EF2CB2 /* DevelopmentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

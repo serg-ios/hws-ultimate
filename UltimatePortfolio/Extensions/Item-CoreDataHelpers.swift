@@ -26,7 +26,7 @@ extension Item {
     }
 
     static var example: Item {
-        let controller = DataController(inMemory: true)
+        let controller = DataController.preview
         let viewContext = controller.container.viewContext
         let item = Item(context: viewContext)
         item.title = "Example item"
