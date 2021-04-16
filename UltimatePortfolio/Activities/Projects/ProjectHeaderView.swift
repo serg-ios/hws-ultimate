@@ -34,3 +34,23 @@ struct ProjectHeaderView_Previews: PreviewProvider {
         ProjectHeaderView(project: Project.example)
     }
 }
+
+// Example of useless view-model.
+
+extension ProjectHeaderView {
+    class ViewModel: ObservableObject {
+        private let project: Project
+
+        var title: String {
+            project.projectTitle
+        }
+
+        var color: String {
+            project.projectColor
+        }
+
+        init(project: Project) {
+            self.project = project
+        }
+    }
+}
