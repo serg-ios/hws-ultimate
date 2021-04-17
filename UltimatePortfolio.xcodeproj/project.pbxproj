@@ -18,6 +18,7 @@
 		790A672B25C0B4F10082F571 /* Project-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790A672A25C0B4F10082F571 /* Project-CoreDataHelpers.swift */; };
 		7938709A2629FB4600F8AA9A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A26CD72629F42F00716077 /* HomeViewModel.swift */; };
 		793870A42629FC1B00F8AA9A /* ItemRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793870A32629FC1B00F8AA9A /* ItemRowViewModel.swift */; };
+		793870AA262B66DF00F8AA9A /* UnlockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793870A9262B66DF00F8AA9A /* UnlockManager.swift */; };
 		793DA7E625C0CD2E001DE207 /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793DA7E525C0CD2E001DE207 /* EditItemView.swift */; };
 		795CA10025CF25400087BCA7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 795CA10225CF25400087BCA7 /* Localizable.strings */; };
 		795CA10625CF26150087BCA7 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 795CA10825CF26150087BCA7 /* Localizable.stringsdict */; };
@@ -73,6 +74,8 @@
 		790A672725C0B3D10082F571 /* Item-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		790A672A25C0B4F10082F571 /* Project-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		793870A32629FC1B00F8AA9A /* ItemRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowViewModel.swift; sourceTree = "<group>"; };
+		793870A9262B66DF00F8AA9A /* UnlockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockManager.swift; sourceTree = "<group>"; };
+		793870AD262B68A700F8AA9A /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
 		793DA7E525C0CD2E001DE207 /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
 		795CA10125CF25400087BCA7 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/Localizable.strings; sourceTree = "<group>"; };
 		795CA10425CF25900087BCA7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -91,8 +94,8 @@
 		7966C7B525BF451B00891BBB /* UltimatePortfolio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UltimatePortfolio.entitlements; sourceTree = "<group>"; };
 		7966C7B725BF451B00891BBB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		7966C7CF25BF496200891BBB /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
-		7968F1A325D8993300EF2CB2 /* DevelopmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DevelopmentTests.swift; path = UltimatePortfolioTests/DevelopmentTests.swift; sourceTree = "<group>"; };
-		797F612A25D93CB4009E04D7 /* ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExtensionTests.swift; path = UltimatePortfolioTests/ExtensionTests.swift; sourceTree = "<group>"; };
+		7968F1A325D8993300EF2CB2 /* DevelopmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentTests.swift; sourceTree = "<group>"; };
+		797F612A25D93CB4009E04D7 /* ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTests.swift; sourceTree = "<group>"; };
 		797F612E25D93FF6009E04D7 /* DecodableDictionary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableDictionary.json; sourceTree = "<group>"; };
 		797F613225D94028009E04D7 /* DecodableString.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableString.json; sourceTree = "<group>"; };
 		797F613A25D947C7009E04D7 /* PerformanceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTest.swift; sourceTree = "<group>"; };
@@ -136,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				7966C7B225BF3BC800891BBB /* DataController.swift */,
+				793870A9262B66DF00F8AA9A /* UnlockManager.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -224,6 +228,8 @@
 				797F613225D94028009E04D7 /* DecodableString.json */,
 				797F612E25D93FF6009E04D7 /* DecodableDictionary.json */,
 				797F613A25D947C7009E04D7 /* PerformanceTest.swift */,
+				797F612A25D93CB4009E04D7 /* ExtensionTests.swift */,
+				7968F1A325D8993300EF2CB2 /* DevelopmentTests.swift */,
 				7908DB1725D7442C00F4058B /* ProjectTests.swift */,
 				7908DB1D25D74CE400F4058B /* AwardTests.swift */,
 				7908DB0525D73E8300F4058B /* BaseTestCase.swift */,
@@ -236,8 +242,6 @@
 		7966C79125BF333C00891BBB = {
 			isa = PBXGroup;
 			children = (
-				797F612A25D93CB4009E04D7 /* ExtensionTests.swift */,
-				7968F1A325D8993300EF2CB2 /* DevelopmentTests.swift */,
 				7966C79C25BF333C00891BBB /* UltimatePortfolio */,
 				7908DB0425D73E8300F4058B /* UltimatePortfolioTests */,
 				7966C79B25BF333C00891BBB /* Products */,
@@ -262,6 +266,7 @@
 				7908DAF325D708A000F4058B /* Localization */,
 				7908DAF225D7089200F4058B /* Extensions */,
 				7908DAF125D7066200F4058B /* Controllers */,
+				793870AD262B68A700F8AA9A /* Configuration.storekit */,
 				7966C79D25BF333C00891BBB /* UltimatePortfolioApp.swift */,
 				7966C79F25BF333C00891BBB /* ContentView.swift */,
 				7966C7A125BF333F00891BBB /* Assets.xcassets */,
@@ -436,6 +441,7 @@
 				79ADB7BE25CC775900F92EDC /* AwardsView.swift in Sources */,
 				7966C7B025BF38D900891BBB /* Main.xcdatamodeld in Sources */,
 				7938709A2629FB4600F8AA9A /* HomeViewModel.swift in Sources */,
+				793870AA262B66DF00F8AA9A /* UnlockManager.swift in Sources */,
 				790A672B25C0B4F10082F571 /* Project-CoreDataHelpers.swift in Sources */,
 				79C941B425CE021500E8BFCA /* Color-Additions.swift in Sources */,
 				79A73F4625C9DF6F0060C124 /* EditProjectView.swift in Sources */,
