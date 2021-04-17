@@ -11,10 +11,13 @@ import SwiftUI
 struct UltimatePortfolioApp: App {
 
     @StateObject var dataController: DataController
+    @StateObject var unlockManager: UnlockManager
 
     init() {
         let dataController = DataController()
+        let unlockManager = UnlockManager(dataController: dataController)
         _dataController = StateObject(wrappedValue: dataController)
+        _unlockManager = StateObject(wrappedValue: unlockManager)
     }
 
     var body: some Scene {
@@ -22,6 +25,7 @@ struct UltimatePortfolioApp: App {
             ContentView()
                 .environment(\.managedObjectContext, dataController.container.viewContext)
                 .environmentObject(dataController)
+                .environmentObject(unlockManager)
                 .onReceive(
                     NotificationCenter.default.publisher(for: UIApplication.willResignActiveNotification), perform: save
                 )
