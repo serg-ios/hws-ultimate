@@ -13,6 +13,7 @@ extension HomeView {
 
         @Published var projects = [Project]()
         @Published var items = [Item]()
+        @Published var selectedItem: Item?
 
         var upNext: ArraySlice<Item> {
             items.prefix(3)
@@ -84,6 +85,10 @@ extension HomeView {
             } else if let newProjects = controller.fetchedObjects as? [Project] {
                 projects = newProjects
             }
+        }
+
+        func selectItem(with identifier: String) {
+            selectedItem = dataController.item(with: identifier)
         }
     }
 }
