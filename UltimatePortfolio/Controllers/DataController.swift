@@ -5,6 +5,7 @@
 //  Created by Sergio Rodríguez Rama on 25/1/21.
 //
 
+import StoreKit
 import CoreSpotlight
 import CoreData
 import SwiftUI
@@ -217,6 +218,14 @@ class DataController: ObservableObject {
                 }
             }
         }
+    }
 
+    func appLaunched() {
+        guard count(for: Project.fetchRequest()) >= 5 else { return }
+        let allScenes = UIApplication.shared.connectedScenes
+        let scene = allScenes.first { $0.activationState == .foregroundActive }
+        if let windowScene = scene as? UIWindowScene {
+            SKStoreReviewController.requestReview(in: windowScene)
+        }
     }
 }
